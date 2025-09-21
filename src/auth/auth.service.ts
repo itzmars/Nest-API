@@ -16,9 +16,9 @@ export class AuthService {
                 hash
             }
         });
-        return user
+        return user;
     }
-    async signin() {
+    signin() {
         return "I signed in!";
     }
 }
