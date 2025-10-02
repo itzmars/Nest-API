@@ -26,6 +26,7 @@ model User{
   firstName String?
   lastName String?
 
+  bookmarks Bookmark[]
   @@map("users")
  }
 
@@ -35,7 +36,7 @@ model Bookmark{
   updatedAt DateTime @updatedAt
 
   title String
-  description String
+  description String?
   link String
 
   userId Int
